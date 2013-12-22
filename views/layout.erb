@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Name - Project Caption Here</title>
+  <link rel="stylesheet" href="/css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/footer.css" type="text/css" media="screen" />
+</head>
+<body>
+<div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Project Name</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="<%= @home_active %>"><a href="/home">Home</a></li>
+        <li class="<%= @action_one_active %>"><a href="/feeds/items">Action One</a></li>
+        <li class="<%= @action_two_active %>"><a href="#">Action Two</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="container">
+  <h1><%= @page_heading %> </h1>
+  <%= yield %>
+</div>
+
+<div class="container">
+  <hr/>
+  <footer>
+    <ul id="footer">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
