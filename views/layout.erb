@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project Name - Project Caption Here</title>
+  <title>MLaaS - Machine Learning As A Service</title>
   <link rel="stylesheet" href="/css/fonts.css" type="text/css" />
   <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="/css/footer.css" type="text/css" media="screen" />
@@ -15,20 +15,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Project Name</a>
+      <a class="navbar-brand" href="/">MLaaS</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="<%= @home_active %>"><a href="/home">Home</a></li>
-        <li class="<%= @action_one_active %>"><a href="/feeds/items">Action One</a></li>
-        <li class="<%= @action_two_active %>"><a href="#">Action Two</a></li>
+        <li class="<%= @datasets_active %>"><a href="/mock_datasets">Datasets</a></li>
+        <li class="<%= @algorithms_active %>"><a href="/mock_algorithms">Algorithms</a></li>
+        <li class="<%= @tasks_active %>"><a href="/mock_tasks">Tasks</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 </div>
 
 <div class="container">
-  <h1><%= @page_heading %> </h1>
+  <h2><%= @page_heading %> </h2>
   <%= yield %>
 </div>
 

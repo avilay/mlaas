@@ -13,3 +13,15 @@ get '/' do
   @home_active = 'active'
   erb :index
 end
+
+get '/mock_algorithms' do
+  @algorithms_active = "active"
+  @page_heading = "Algorithms"
+  erb :mock_algorithms
+end
+
+get '/mock_datasets' do
+  @datasets_active = "active"
+  @page_heading = "Datasets"
+  erb :mock_datasets
+end
